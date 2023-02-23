@@ -1,0 +1,18 @@
+лют. 17, 2023 2:24:32 ПП main.app.TrainBuilder <init>
+INFO: Starts initialize TrainBuilder
+лют. 17, 2023 2:24:32 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.train;
+лют. 17, 2023 2:24:33 ПП main.app.db.Repository selectAllTrains
+INFO: Finished adding trains from result set!
+лют. 17, 2023 2:24:33 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.wagon;
+лют. 17, 2023 2:24:33 ПП main.app.db.Repository selectAllWagons
+INFO: Finished adding wagons from result set!
+лют. 17, 2023 2:24:33 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.assigned_wagon;
+лют. 17, 2023 2:24:33 ПП main.app.db.Repository selectAllAssignedWagons
+INFO: Finished adding wagons from result set!
+лют. 17, 2023 2:24:33 ПП main.app.TrainBuilder assignWagonsToTheTrains
+INFO: Starts assigning wagons to the trains
+лют. 17, 2023 2:24:33 ПП main.app.TrainBuilder <init>
+INFO: Finished initialize TrainBuilder

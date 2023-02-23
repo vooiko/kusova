@@ -1,0 +1,116 @@
+лют. 17, 2023 2:09:54 ПП main.app.TrainBuilder <init>
+INFO: Starts initialize TrainBuilder
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.train;
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository selectAllTrains
+INFO: Finished adding trains from result set!
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.wagon;
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository selectAllWagons
+INFO: Finished adding wagons from result set!
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository executeQuery
+INFO: Executing query: SELECT * FROM train_db.assigned_wagon;
+лют. 17, 2023 2:09:55 ПП main.app.db.Repository selectAllAssignedWagons
+INFO: Finished adding wagons from result set!
+лют. 17, 2023 2:09:55 ПП main.app.TrainBuilder assignWagonsToTheTrains
+INFO: Starts assigning wagons to the trains
+лют. 17, 2023 2:09:55 ПП main.app.TrainBuilder <init>
+INFO: Finished initialize TrainBuilder
+лют. 17, 2023 2:10:46 ПП main.app.db.Repository deleteWagon
+INFO: method 'deleteWagon' in Repository was executed!
+лют. 17, 2023 2:10:46 ПП main.app.db.Repository execute
+INFO: Executing query: DELETE FROM train_db.wagon WHERE (id = 'aa5b2bf4-6102-497e-b4c6-bfd9a9de1a9b');
+лют. 17, 2023 2:10:46 ПП main.app.TrainBuilder deleteWagon
+INFO: Wagon was deleted
+лют. 17, 2023 2:11:06 ПП main.app.db.Repository insertWagon
+INFO: method 'insertWagon' in Repository was executed!
+лют. 17, 2023 2:11:06 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.wagon VALUES ('ea91c454-1eda-4b7d-9a44-5ce842a67a27', 'vip', '400', 100.0);
+лют. 17, 2023 2:11:06 ПП main.app.TrainBuilder addWagon
+INFO: Added new wagon!
+лют. 17, 2023 2:11:27 ПП main.app.db.Repository deleteWagon
+INFO: method 'deleteWagon' in Repository was executed!
+лют. 17, 2023 2:11:27 ПП main.app.db.Repository execute
+INFO: Executing query: DELETE FROM train_db.wagon WHERE (id = 'ea91c454-1eda-4b7d-9a44-5ce842a67a27');
+лют. 17, 2023 2:11:27 ПП main.app.TrainBuilder deleteWagon
+INFO: Wagon was deleted
+лют. 17, 2023 2:11:28 ПП main.app.db.Repository deleteWagon
+INFO: method 'deleteWagon' in Repository was executed!
+лют. 17, 2023 2:11:28 ПП main.app.db.Repository execute
+INFO: Executing query: DELETE FROM train_db.wagon WHERE (id = 'a2021624-8692-4e2a-be09-17cc8232ab92');
+лют. 17, 2023 2:11:28 ПП main.app.TrainBuilder deleteWagon
+INFO: Wagon was deleted
+лют. 17, 2023 2:11:54 ПП main.app.TrainBuilder deleteTrain
+INFO: 'deleteTrain' was executed
+лют. 17, 2023 2:11:54 ПП main.app.db.Repository deleteTrain
+INFO: method 'deleteTrain' in Repository was executed!
+лют. 17, 2023 2:11:54 ПП main.app.db.Repository execute
+INFO: Executing query: DELETE FROM train_db.train WHERE (id = '85392f0c-8f24-4aba-83ab-12f76b194cc8');
+лют. 17, 2023 2:11:54 ПП main.app.TrainBuilder deleteTrain
+INFO: train was deleted!
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder createTrain
+INFO: Starting execute 'createTrain' method
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder createTrain
+INFO: Sorting wagons by the same comfort type
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder getWagonsByComfort
+INFO: Sorting wagons by the same comfort type
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder chooseWagon
+INFO: Choosing wagon with better proportion (seats/weight per person)
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder getWagonsByComfort
+INFO: Sorting wagons by the same comfort type
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder chooseWagon
+INFO: Choosing wagon with better proportion (seats/weight per person)
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder getWagonsByComfort
+INFO: Sorting wagons by the same comfort type
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder chooseWagon
+INFO: Choosing wagon with better proportion (seats/weight per person)
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder createTrain
+INFO: Getting and writing in ArrayList AssignedWagon's
+лют. 17, 2023 2:12:48 ПП main.app.TrainBuilder createTrain
+INFO: Assign them to the train
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository insertTrain
+INFO: method 'insertTrain' in Repository was executed!
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.train VALUES ('a36ced2c-cfab-4f1b-9b53-97bd62474452', 'TEst', 'Test');
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository insertAssignedWagon
+INFO: method 'insertAssignedWagon' in Repository was executed!
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.assigned_wagon VALUES ('97ff6d2a-53fc-4562-b61c-e5197995f4d7', 'a36ced2c-cfab-4f1b-9b53-97bd62474452', '97ff6d2a-53fc-4562-b61c-e5197995f4d7', 1);
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository insertAssignedWagon
+INFO: method 'insertAssignedWagon' in Repository was executed!
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.assigned_wagon VALUES ('a0664f25-7dd4-4343-8035-52543055efab', 'a36ced2c-cfab-4f1b-9b53-97bd62474452', 'a0664f25-7dd4-4343-8035-52543055efab', 1);
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+SEVERE: ERROR WILE EXECUTING SQL QUERY!
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+SEVERE: Duplicate entry 'a0664f25-7dd4-4343-8035-52543055efab' for key 'assigned_wagon.PRIMARY'
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository insertAssignedWagon
+INFO: method 'insertAssignedWagon' in Repository was executed!
+лют. 17, 2023 2:12:48 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.assigned_wagon VALUES ('113e0982-9246-46c8-ab32-ef32bcc0c273', 'a36ced2c-cfab-4f1b-9b53-97bd62474452', '113e0982-9246-46c8-ab32-ef32bcc0c273', 1);
+лют. 17, 2023 2:14:08 ПП main.app.TrainBuilder addWagonToTheTrain
+INFO: 'addWagonToTheTrain' executed
+лют. 17, 2023 2:14:08 ПП main.app.TrainBuilder addWagonToTheTrain
+INFO: Find train
+лют. 17, 2023 2:14:08 ПП main.app.db.Repository insertAssignedWagon
+INFO: method 'insertAssignedWagon' in Repository was executed!
+лют. 17, 2023 2:14:08 ПП main.app.db.Repository execute
+INFO: Executing query: INSERT INTO train_db.assigned_wagon VALUES ('a0664f25-7dd4-4343-8035-52543055efab', 'a36ced2c-cfab-4f1b-9b53-97bd62474452', 'a0664f25-7dd4-4343-8035-52543055efab', 5);
+лют. 17, 2023 2:14:08 ПП main.app.db.Repository execute
+SEVERE: ERROR WILE EXECUTING SQL QUERY!
+лют. 17, 2023 2:14:08 ПП main.app.db.Repository execute
+SEVERE: Duplicate entry 'a0664f25-7dd4-4343-8035-52543055efab' for key 'assigned_wagon.PRIMARY'
+лют. 17, 2023 2:14:08 ПП main.app.TrainBuilder addWagonToTheTrain
+INFO: Wagon was added
+лют. 17, 2023 2:14:24 ПП main.app.TrainBuilder sortWagons
+INFO: 'sortWagons' was executed!
+лют. 17, 2023 2:14:24 ПП main.app.TrainBuilder sortWagons
+INFO: Find train that we looking for!
+лют. 17, 2023 2:14:24 ПП main.app.TrainBuilder sortWagons
+INFO: Sorting was finished
+лют. 17, 2023 2:14:47 ПП main.app.db.Repository deleteAssignedWagon
+INFO: method 'deleteAssignedWagon' in Repository was executed!
+лют. 17, 2023 2:14:47 ПП main.app.db.Repository execute
+INFO: Executing query: DELETE FROM train_db.assigned_wagon WHERE (id = '550040cf-374f-4aa2-8675-d21bbf1f4360');
+лют. 17, 2023 2:14:47 ПП main.app.TrainBuilder removeWagonFromTheTrain
+INFO: Wagon was deleted
